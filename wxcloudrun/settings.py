@@ -23,6 +23,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    "ota.apps.OtaConfig",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -190,3 +191,8 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGS_DIR = '/data/logs/'
+
+# file pasth add
+import os
+BIN_URL = '/firmwares/'
+BIN_ROOT = os.path.join(BASE_DIR, 'firmwares')
