@@ -24,5 +24,5 @@ urlpatterns = (
     # 获取主页
     url(r'(/)?$', views.index),
     
-    path("ota/", include("ota.urls")),  
-)+ static(settings.BIN_URL, document_root=settings.BIN_ROOT)
+    #ota
+)
